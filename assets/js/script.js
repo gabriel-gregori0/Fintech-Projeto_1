@@ -1,7 +1,7 @@
 (() => {
     const container = document.createElement('div');
-    container.classList.add("container","mt-5", 
-    "mb-5", "p-3","bg-dark-subtle","rounded-3");
+    container.classList.add("container", 
+    "mb-5","rounded-3");
     const row = document.createElement('div');
     row.className = "row";
 
@@ -27,7 +27,7 @@ const column1 = () => {
 
 const column2 = () => {
     const col = document.querySelector('.column-2');
-    col.classList.add("d-flex","flex-column","align-items-center","justify-content-center","vh-100");
+    col.classList.add("d-flex","flex-column","align-items-center","vh-100","justify-content-around");
 
     const aClass = ["expense","investiments","add","withdraw"];
     const aTexts = ["Expense", "Investments", "Add", "Withdraw"];
@@ -35,7 +35,7 @@ const column2 = () => {
 
     for (let i = 0; i < 4; i++) {
         const a = document.createElement('a');
-        a.classList.add(aClass[i], "btn",colors[i], "text-white");
+        a.classList.add(aClass[i],colors[i],"btn","text-white");
         a.innerText = aTexts[i];
 
         col.appendChild(a);
@@ -46,7 +46,7 @@ const column3 = () => {
     const col3 = document.querySelector('.column-3');
     col3.classList.add("text-center");
     const label = document.createElement('label');
-    label.classList.add("savings","btn","btn-warning","disabled","text-white");
+    label.classList.add("savings","btn","btn-warning","text-white");
     label.innerText = 'Savings';
 
     col3.appendChild(label);
