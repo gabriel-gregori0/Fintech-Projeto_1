@@ -1,6 +1,8 @@
 (() => {
     const container = document.createElement('div');
-    container.className = "container";
+    container.classList.add("container","mt-5", 
+    "mb-5", "p-3","bg-dark-subtle","align-items-center", 
+    "justify-content-center","d-flex","flex-column");
     const row = document.createElement('div');
     row.className = "row";
 
@@ -16,8 +18,9 @@
 
 const column1 = () => {
     const col1 = document.querySelector('.column-1');
+    col1.classList.add("text-center");
     const label = document.createElement('label');
-    label.classList.add('balance',"text-center", "justify-content-center","d-flex");
+    label.classList.add('balance',"disabled","btn","btn-success");
     label.innerText = 'Balance';
 
     col1.appendChild(label);
@@ -46,8 +49,9 @@ const column2 = () => {
 
 const column3 = () => {
     const col3 = document.querySelector('.column-3');
+    col3.classList.add("text-center");
     const label = document.createElement('label');
-    label.classList.add('savings',"text-center", "justify-content-center","d-flex");
+    label.classList.add("savings","btn","btn-warning","disabled");
     label.innerText = 'Savings';
 
     col3.appendChild(label);

@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+.container {
+    min-width: 1000px;
+}
+
+.column-1,.column-2,.column-3 {
+    width: 10%;
+}
