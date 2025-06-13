@@ -2,7 +2,7 @@
 </br></br></br>
 <strong>Skills:</strong>
 <ul>
-  <li>JavScript</li>
+  <li>JavaScript</li>
   <li>HTML</li>
   <li>CSS</li>
   <li>Bootstrap</li>
