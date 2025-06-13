@@ -44,5 +44,16 @@ const column2 = () => {
     }
 }
 
+const column3 = () => {
+    const col3 = document.querySelector('.column-3');
+    const label = document.createElement('label');
+    label.classList.add('savings',"text-center", "justify-content-center","d-flex");
+    label.innerText = 'Savings';
+
+    col3.appendChild(label);
+    
+}   
+
 column1();
 column2();
+column3();
