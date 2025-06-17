@@ -33,7 +33,10 @@ const column2 = () => {
     const aTexts = ["Expense", "Investments", "Add", "Withdraw"];
     const colors = ["bg-success", "bg-warning", "bg-primary", "bg-danger"];
     const divs = [document.createElement('div'),document.createElement('div')];
+    divs[0].classList.add("d-flex","flex-column","align-items-center");
+    divs[1].classList.add("d-flex","flex-column","align-items-center");
 
+    
     for (let i = 0; i < 4; i++) {
         const a = document.createElement('a');
         a.classList.add(aClass[i],colors[i],"btn","text-white");

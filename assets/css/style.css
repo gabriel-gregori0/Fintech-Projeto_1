@@ -9,6 +9,7 @@
 .container {
     height: 100vh;
     background-color: #3F4049;
+    min-width: 770px;
 
 }
 
@@ -18,4 +19,34 @@
     font-size: 50px;
 }
 
+.expense {
+    margin-top: 30px !important;
+}
+
+.investiments {
+    margin-top: 15px;
+}
+
+.withdraw {
+    margin-top: 15px;
+}
+
+.add:hover,.expense:hover,.investiments:hover,.withdraw:hover {
+    opacity: 0.8;
+}
+
+.add {
+    padding-left: 85px !important;
+    padding-right: 85px !important;
+}
+
+.expense {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.withdraw {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
 
