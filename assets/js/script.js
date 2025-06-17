@@ -32,21 +32,27 @@ const column2 = () => {
     const aClass = ["expense","investiments","add","withdraw"];
     const aTexts = ["Expense", "Investments", "Add", "Withdraw"];
     const colors = ["bg-success", "bg-warning", "bg-primary", "bg-danger"];
+    const divs = [document.createElement('div'),document.createElement('div')];
 
     for (let i = 0; i < 4; i++) {
         const a = document.createElement('a');
         a.classList.add(aClass[i],colors[i],"btn","text-white");
         a.innerText = aTexts[i];
-
-        col.appendChild(a);
+        if(a.classList.contains("expense") || a.classList.contains("investiments")) {
+            divs[0].appendChild(a);
+        } else {
+            divs[1].appendChild(a);
+        }
     }
+    col.appendChild(divs[0]);
+    col.appendChild(divs[1]);
 }
 
 const column3 = () => {
     const col3 = document.querySelector('.column-3');
     col3.classList.add("text-center");
     const label = document.createElement('label');
-    label.classList.add("savings","btn","btn-warning","text-white");
+    label.classList.add("savings","disabled","btn","btn-warning","text-white");
     label.innerText = 'Savings';
 
     col3.appendChild(label);
